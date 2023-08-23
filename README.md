@@ -16,6 +16,9 @@ Create a file named servers.ini in a directory of your choice. This file will st
 192.168.0.65
 192.168.0.66
 ```
+
+Variables which are ip specific can be mentioned to the left of the ip 
+
 ## Step 3: Create Ansible Playbook (commands.yml)
 
 Create another file named commands.yml in the same directory. This file will contain the Ansible playbook that executes commands on the servers. Edit the file and paste the following content for running commands using the command module:
