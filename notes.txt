@@ -1,0 +1,3 @@
+stty -echo; printf "Password: "; read PASS; stty echo; echo "${PASS}" | \ ssh <USER>@localhost "sudo -S dmesg"
+
+

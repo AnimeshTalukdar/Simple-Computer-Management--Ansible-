@@ -1,0 +1,14 @@
+---
+- name: Run a command using the command module
+  hosts: my_servers
+  become: yes
+  vars:
+    ansible_user: user
+    ansible_ssh_pass: user
+    ansible_become_pass: user
+    ansible_become: yes
+    ansible_become_method: sudo
+  tasks:
+    - name: Execute ls command
+      command: sudo apt remove cmatrix
+

@@ -1,0 +1,11 @@
+---
+- name: Run a command using the shell module
+  hosts: my_servers
+  vars:
+    ansible_user: user
+    ansible_passwd: user
+  tasks:
+    - name: Execute a shell command
+      shell: |
+        ls
+
